@@ -37,9 +37,3 @@ Grab it here:
 3. Open **opera:extensions** page.
 4. Enable "Developer Mode" (top right corner).
 6. Click **Load unpacked** and select the folder where you unzipped the file.
-
-
-## TODO
-
-* Button for dumping IDs into JSON
-* Automatic upload of IDs to corresponding Wiki pages
