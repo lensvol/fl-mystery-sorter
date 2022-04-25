@@ -1,6 +1,6 @@
 # FL Mystery Sorter
 
-[![License](https://img.shields.io/github/license/lensvol/fl-mystery-sorter)](https://github.com/lensvol/fl-mystery-sorter/blob/master/LICENSE) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/lensvol/fl-mystery-sorter) 
+[![License](https://img.shields.io/github/license/lensvol/fl-mystery-sorter)](https://github.com/lensvol/fl-mystery-sorter/blob/master/LICENSE) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/lensvol/fl-mystery-sorter) [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/dphadlgegfppjflgefaicponddcnjpbm)](https://chrome.google.com/webstore/detail/fl-1-click-wiki/ceakejjcdgbcocopkdkhiakkohpahien) [![Mozilla Add-on](https://img.shields.io/amo/v/fl-mystery-sorter)](https://addons.mozilla.org/en-US/firefox/addon/fl-mystery-sorter/) 
 
 ![screenshot](https://raw.githubusercontent.com/lensvol/fl-mystery-sorter/master/screenshot.png)
 
@@ -10,6 +10,9 @@ _NB: This extension is **not** yet whitelisted by Failbetter Games. Use at your 
 
 Grab it here:
 * [Releases page](https://github.com/lensvol/fl-mystery-sorter/releases) (most up-to-date, see below for instructions)
+* [Firefox Addons](https://addons.mozilla.org/en-GB/firefox/addon/fl-mystery-sorter/)
+* [Chrome Web Store](https://chrome.google.com/webstore/detail/fl-mystery-sorter/dphadlgegfppjflgefaicponddcnjpbm)
+
 
 ## Manual installation
 
