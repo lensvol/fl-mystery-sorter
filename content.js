@@ -1,7 +1,7 @@
 const MYSTERIES_ORDER = [143188, 143189, 143190, 143191, 143192];
 const MYSTERIES_SELECTOR = MYSTERIES_ORDER.map((i) => `div[data-branch-id='${i}']`).join(", ");
 
-const NEATHBOW_ORDER = [141683, 142658, 142674, 142711, 142712, 142713];
+const NEATHBOW_ORDER = [141683, 142658, 142674, 142711, 142712, 142713, 142714];
 const NEATHBOW_SELECTOR = NEATHBOW_ORDER.map((i) => `div[data-quality-id='${i}']`).join(", ");
 
 function sortMysteries(node) {
