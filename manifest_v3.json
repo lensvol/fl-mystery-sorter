@@ -1,7 +1,7 @@
 {
   "name": "FL Mystery Sorter",
   "description": "Show various things in Fallen London properly sorted.",
-  "version": "1.1",
+  "version": "1.1.0",
   "manifest_version": 3,
   "host_permissions": [
       "https://www.fallenlondon.com/*"
