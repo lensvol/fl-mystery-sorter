@@ -4,6 +4,9 @@ const MYSTERIES_SELECTOR = MYSTERIES_ORDER.map((i) => `div[data-branch-id='${i}'
 const NEATHBOW_ORDER = [141683, 142658, 142674, 142711, 142712, 142713, 142714];
 const NEATHBOW_SELECTOR = NEATHBOW_ORDER.map((i) => `div[data-quality-id='${i}']`).join(", ");
 
+const SEAL_ORDER = [141891, 141892, 141893, 141894, 141895, 141896, 141897, 141898, 142381];
+const SEAL_SELECTOR = SEAL_ORDER.map((i) => `div[data-branch-id='${i}']`).join(", ");
+
 function sortMysteries(node) {
     const mysteryIcons = node.querySelectorAll(MYSTERIES_SELECTOR);
     if (mysteryIcons.length <= 1) {
@@ -24,6 +27,29 @@ function sortMysteries(node) {
         .forEach(mystery => {
             parent.removeChild(mystery);
             mysteries[0].after(mystery);
+        })
+}
+
+function sortSeals(node) {
+    const sealIcons = node.querySelectorAll(SEAL_SELECTOR);
+    if (sealIcons.length <= 1) {
+        return;
+    }
+
+    const seals = Array
+        .from(sealIcons)
+        .sort((i1, i2) => i1.dataset.branchId - i2.dataset.branchId)
+        .map((icon) => icon.parentElement);
+
+    const parent = seals[0].parentElement;
+    const start = seals[0].previousSibling;
+
+    seals
+        .slice(1)
+        .reverse()
+        .forEach(seal => {
+            parent.removeChild(seal);
+            seals[0].after(seal);
         })
 }
 
@@ -65,6 +91,12 @@ let qualityListObserver = new MutationObserver(function (mutations) {
             if (accomplishments.length > 0) {
                 console.debug("[FL Mystery Sorter] Accomplishments found!")
                 sortMysteries(node);
+            }
+
+            const stories = node.querySelectorAll("div[data-group-name='Stories']");
+            if (accomplishments.length > 0) {
+                console.debug("[FL Mystery Sorter] Stories found!")
+                sortSeals(node);
             }
 
             const contrabandSection = node.querySelectorAll("div[data-group-name='Contraband']");
