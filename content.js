@@ -94,7 +94,7 @@ let qualityListObserver = new MutationObserver(function (mutations) {
             }
 
             const stories = node.querySelectorAll("div[data-group-name='Stories']");
-            if (accomplishments.length > 0) {
+            if (stories.length > 0) {
                 console.debug("[FL Mystery Sorter] Stories found!")
                 sortSeals(node);
             }
